@@ -1,0 +1,8 @@
+﻿20230418_092902 - FETCH DATA TEST - Lettura dati di test da sheet REGISTRY_PLATES
+20230418_092903 - FETCH DATA TEST - Fine letura dati
+20230418_092903 - INSERIMENTO - Inserimento nuova vettura di categoria CICLOMOTOREe targa TES000
+20230418_093014 - INSERIMENTO - Inviato veicolo al PC Stazione.
+20230418_093016 - INSERIMENTO - Terminato inserimeno pe targa :TES000
+20230418_093016 - INSERIMENTO - Inserimento nuova vettura di categoria AUTOVETTURAe targa TE000AU
+20230418_093123 - INSERIMENTO - Inviato veicolo al PC Stazione.
+20230418_093125 - INSERIMENTO - Terminato inserimeno pe targa :TE000AU

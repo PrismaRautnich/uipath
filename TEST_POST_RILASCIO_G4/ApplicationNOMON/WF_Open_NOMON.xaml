@@ -1,0 +1,190 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="WF_Menage_NOMON" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="in_ListaTarghe" Type="InArgument(scg:List(x:String))" />
+  </x:Members>
+  <sap2010:ExpressionActivityEditor.ExpressionActivityEditor>C#</sap2010:ExpressionActivityEditor.ExpressionActivityEditor>
+  <sap:VirtualizedContainerService.HintSize>980,2130</sap:VirtualizedContainerService.HintSize>
+  <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Text</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.CSharp</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.ServiceModel.Activities</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="WF_Menage_NOMON" sap:VirtualizedContainerService.HintSize="546,2065" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application: Versione moduli" sap:VirtualizedContainerService.HintSize="484,563" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" ScopeGuid="0405e0c5-0f3b-428c-aed5-5905c5c747d9" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,272" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click Versione Moduli" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="0405e0c5-0f3b-428c-aed5-5905c5c747d9" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable CvElementArea="262, 547, 139, 41" CvTextArea="322, 554, 44, 23" CvTextArgument="OK" CvType="Button" DesignTimeRectangle="264, 548, 137, 37" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'OK'" FullSelectorArgument="&lt;wnd cls='TBitBtn' title='OK' /&gt;" FuzzySelectorArgument="&lt;wnd cls='TBitBtn' title='OK' check:text='OK' /&gt;" Guid="9f317ad2-24d2-4622-882e-0fac1b97f335" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAI0AAAApCAYAAAAI06pdAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAKcSURBVHhe7drNceowFIZhN6V+vGBDF1mpDvbqRU3QAB3oHtngSNbRzyHJtWQ+Ms9MxthhBr2RZcP0eDwcgASiAbEtmsvlAlDERoMHHtzjer2Wo7nf7wCb2+3WFs1rGwCiATFEA2KIBsQQDYghmgprjdOzckpNbpoCirbN2hnLH/fNOh0eq7Sz7H5PVjsVvs5yzOwMt+9BEE0OxTLvQ8mhEPLxCKIZIBgP0XC4watSTrPhNEbDvmZ/wXgfFQ0NA7s9RjNMMnituEFuiGagYLyPiYaGwU1fK+75FzO/Bi3gTxHWRvv5tQ57+ppNtF81Gv93wuMX/QbjfUQ0NAxbMNP0xe6zYgYwiSBkmcj2A16KZrxgvNNHQ8PwHUwtGjPHA1hatG7SgZ9N+HwuGm6m8jNaeGyfTh0NDUN7MGQ/aygdn5JyrFbRcfHsxEWz27bILaT7c9poaBhEwXj7aOIZo2A/QxWjmfOX8sVTYT9OGQ29/eJgksGV/OcXT2vcrJLXHOqBho2G3uLsdnkw3hHRqHTWaVpHHWvIaOitXYOgH3a7OBgvHdw/OT1tXlGmC+nWtdRRxowmDOMZzvJbuF0UzOrdhXBy2V2NJp7FkoW0ZJY7wJjRUBBRIPtgvDeiSWaMpnsmwktuNggmrI5PU+OuafbhhN4JZsHcbKNZIz94P725F0iC7XdRPGw0HhvO28Gs0ggIXSZrs/sYwejf+RghUA+wD0NH40Xh/DCYFTPbNOMGuT0a9oPLDu/dDB+Nt4TzK8E8HfHViKd0UdzfaeoU0fwJ0ZewSp8ZyaJhZ7rqMf8Xoqmpft2zdlkujYYwi+Ke7t0gGhBDNCCGaEAM0YAYogExRANiTdH4nQBCxWj8kwCcbDQAJUk0AK0QDQg93D8XgFuW5bYiEQAAAABJRU5ErkJggg==" InformativeScreenshot="0a890d8c03ee775978aed26cab27d765.png" ScopeSelectorArgument="&lt;wnd app='nomon.exe' cls='TFormLeggiVersione' title='Versione moduli' /&gt;" SearchSteps="Selector, FuzzySelector, Image, CV" Version="V2" Visibility="Interactive" />
+              </uix:NClick.Target>
+            </uix:NClick>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="270, 213, 660, 595" FilePath="C:\\Program Files (x86)\\NOMON\\nomon.exe" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFKSURBVFhHzZQLjsQgDEM5OkfrzTpxipFL0w5Is+laeltwCLif2WLaXyY0MwnNPPaX9b8DbNu211qXQd+sHgOsbgYx9Kx+HgBiiJneSwA0sZGb4EpYV1+9qPakHoBNpR4/D4xt4NQG5yuwT8OpihuyWKH/a/TJFL3TWcZwM2H1xhycywBPG4w1X9/ugFR7bafNI7Cm9dmhPj4CWNHf+QAPZ43zIwCvHLfaDb0XsMfGLUz7n/wFNDxdObZBCNcoCOMfoacq16/esZqvGf0buMdItNYD+HuwiScyxib8LI+A59odffMArft6nI0/fgDSmMkgHamdfEM3XIXqAXg4HjfUX43hH0urM4jOV8Ge1CWAiiGiZtTGkESFufYDXXM+MZAG4OGrYkgGVX0N8Nd6PwAf74uEZiahmUloZhKamYRmJqGZSWhmEppJlP0DkgBw/GZDN78AAAAASUVORK5CYII=" InformativeScreenshot="3fe480b51138b17e9e180f773eca6f37.png" Selector="&lt;wnd app='nomon.exe' cls='TFormLeggiVersione' title='Versione moduli' /&gt;" Title="Versione moduli" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application: NOMON    versione: 2.0.0.11" sap:VirtualizedContainerService.HintSize="484,1351" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" ScopeGuid="187a7536-6885-407a-be61-888d51cfa565" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,1060" sap2010:WorkflowViewState.IdRef="Sequence_3">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Apri' per Ditta" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="187a7536-6885-407a-be61-888d51cfa565" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable CvType="InputBox" DesignTimeRectangle="537, 298, 17, 36" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'Apri'" FullSelectorArgument="&lt;wnd cls='TComboBox' /&gt;&lt;ctrl automationid='DropDown' /&gt;" FuzzySelectorArgument="&lt;wnd cls='TComboBox' /&gt;&lt;ctrl automationid='DropDown' role='push button' check:text='Apri' /&gt;" Guid="dc25006e-fdab-418f-b772-6e2bd60cabb7" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABUAAAAoCAYAAAAR87HlAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAB4SURBVEhL7dFhCoAgDIbhXddbeTcvsBssP4MoSMs56s83eCUsHrIk52yRYSSlZFGVUna0rXWwsVIX9Q6OPURVdTqiRIkSxXyPiki383PTb/oEItfxRyByf9MeiP7/UW8jSpQoUcwFxU1vtyg2VztQXETW0LaGjtkGV+SxyEdT/8sAAAAASUVORK5CYII=" InformativeScreenshot="58a982a1db5ad288827a7ce8facea60a.png" ScopeSelectorArgument="&lt;wnd app='nomon.exe' cls='TForm1' title='NOMON    versione: 2.0.0.11' /&gt;" SearchSteps="Selector, FuzzySelector, Image, CV" Version="V2" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target CvType="InputBox" DesignTimeRectangle="94, 299, 442, 34" ElementType="InputBox" FriendlyName="'Edit'" FullSelectorArgument="&lt;wnd cls='Edit' /&gt;" FuzzySelectorArgument="&lt;wnd cls='Edit' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAb4AAAAmCAYAAAC7z/5zAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADASURBVHhe7dXRCYAwFATB127qTiER/RFbcGfguBJ21lrHzMyssid8AFCw937DNzPPA8BfCR8AKcIHQIrwAZAifACkCB8AKcIHQIrwAZAifACkCB8AKcIHQIrwAZAifACkCB8AKcIHQIrwAZAifACkCB8AKcIHQIrwAZAifACkCB8AKcIHQIrwAZAifACkCB8AKcIHQIrwAZAifACkCB8AKcIHQIrwAZDyCR8A/J3wAZAifACk3M2bu35mZmaN7XMBpYeH5B0yTvUAAAAASUVORK5CYII=" SearchSteps="Selector, FuzzySelector, Image, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Prisma' per Ditta" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="187a7536-6885-407a-be61-888d51cfa565" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable DesignTimeRectangle="0, 0, 465, 34" DesignTimeScaleFactor="1" ElementType="List" FriendlyName="'nomon.exe'" Guid="366f32cb-9230-47a9-933c-f442e3fd2ef2" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAdEAAAAiCAYAAAAAsuOYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAANLSURBVHhe7d09jqswFIbhWVfWE2UNdxksIyugzCoi3QKJLg1KlSqd7zF4iH/BEC4zjt4jPU1ifkLz6RhDvo7HowIAAMv1Ifr15y8AAFiAEAUAYCVCFACAlQhRAABWIkQBAFgpEaI3Vauceqqme6r6clMHZ/t1Tlez274e6hQZAwDAb/FmiNoloVfZ+1iOEAUAlGTDEJXq7m91pIQoAKAk24aoVH229wMAwOfKC9FEh3k431Vjhox1vQXjAAD4RG+FaO/8MINMOWNbVXXmc106YKu7qq3Pmu51LzVnOlcHd909zZhXjQucYvdl5Zh22A/dcqtOl4dsZz7Upfdxbq1tc8bERLbTteEiLADAz9s5RB+RaeJXWE6HqLevZD1V5QepH6JyHkEHbVXTd9NyDaaOl+y4c6bCI+cIACjOGyHaZkznzgdfc3l1dVMheriE3We6vAD2QjSngi4yUrH7v+5vmCimvQGgeHkhuqDcYImFaLoLS4eo39F6oV7d5HsJ2U463diUbixErWnkfv/R8JNzHadu2zAg/SD0jtNYU7cHv2MPOm0AQGm2DdGgYw1D1O48fekQdc9nmG51t50UhGgkwIIx89PCfog63fLstSBEAaB024VoYsrXDY7pe4HZnaip5vqQTjGxmMg2E37RMdHf412XRWFOiALAp3kvRDv92j8dZKnucllwpENUBNOhfsm5XO/xtyblhGhWQHpjokFrayXgb/1K3XCREiEKAKXLC9HZsEjZMETFQT82Yr6dqmC61wvR+JTyViHaDo+3mCHpIkQBoHRFhehgWBUce1bULmeB014h6ne8Uq8pZ6ZzAeDTFBiiHgmnUx+qZrPvskNwlxD1fmtwzQhRAPg05Yfot6n7nnuE6NTxY9sSogBQvGJCVC/Qqcyr9PQCIndFrnSjV3d61wnKnwhR+xnT/jlW8/FYhCgAlK6MEJ1dmeuXd5w9QjT4rXM1/bgPAOD3K6cTlSB1O71Uzb8k4f+EqJg8R92ZuufB38YBQNmKCdFBa/4dJVyZO/6LS7CN2CtEtUrGOOdnP7/qXY/oMQAApUiEKAAAmEOIAgCwEiEKAMBKhCgAACsRogAArESIAgCwEiEKAMBKY4gCAICljuofyonEKbhjzeoAAAAASUVORK5CYII=" InformativeScreenshot="fc0d0660225c851192722e7ab23f85b9.png" ScopeSelectorArgument="&lt;wnd app='nomon.exe' cls='ComboLBox' idx='*' /&gt;" SearchSteps="Selector, FuzzySelector, Image" Version="V2" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target CvType="InputBox" DesignTimeRectangle="537, 298, 17, 36" ElementType="Button" FriendlyName="'Chiudi'" FullSelectorArgument="&lt;wnd cls='TComboBox' /&gt;&lt;ctrl automationid='DropDown' /&gt;" FuzzySelectorArgument="&lt;wnd cls='TComboBox' /&gt;&lt;ctrl automationid='DropDown' role='push button' check:text='Chiudi' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABUAAAAoCAYAAAAR87HlAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAB4SURBVEhL7dFhCoAgDIbhXddbeTcvsBssP4MoSMs56s83eCUsHrIk52yRYSSlZFGVUna0rXWwsVIX9Q6OPURVdTqiRIkSxXyPiki383PTb/oEItfxRyByf9MeiP7/UW8jSpQoUcwFxU1vtyg2VztQXETW0LaGjtkGV+SxyEdT/8sAAAAASUVORK5CYII=" SearchSteps="Selector, FuzzySelector, Image, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                  <uix:TargetAnchorable.FuzzySelectorArgument>
+                    <InArgument x:TypeArguments="x:String">
+                      <Literal x:TypeArguments="x:String" Value="" />
+                    </InArgument>
+                  </uix:TargetAnchorable.FuzzySelectorArgument>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Prisma' per Ditta" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NClick_4" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="187a7536-6885-407a-be61-888d51cfa565" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable CvElementArea="563, 279, 212, 67" CvTextArea="577, 299, 138, 25" CvTextArgument="Inizio Test" CvType="Button" DesignTimeRectangle="565, 280, 209, 65" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'Inizio Test &gt;&gt;'" FullSelectorArgument="&lt;wnd cls='TBitBtn' title='Inizio Test  &amp;gt;&amp;gt;' /&gt;" FuzzySelectorArgument="&lt;wnd cls='TBitBtn' title='Inizio Test  &amp;gt;&amp;gt;' check:text='Inizio Test  &amp;gt;&amp;gt;' /&gt;" Guid="ec5661ca-7e5b-4eb4-8ef4-4a2ad99c5a03" ImageBase64="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" InformativeScreenshot="fef34c96bf68ccdaf521e40b777bc156.png" ScopeSelectorArgument="&lt;wnd app='nomon.exe' cls='TForm1' title='NOMON    versione: 2.0.0.11' /&gt;" SearchSteps="Selector, FuzzySelector, Image, CV" Version="V2" Visibility="Interactive" />
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'PCStazione'" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NClick_5" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="187a7536-6885-407a-be61-888d51cfa565" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable DesignTimeRectangle="39, 127, 305, 31" DesignTimeScaleFactor="1" ElementType="RadioButton" FriendlyName="'PCStazione'" FullSelectorArgument="&lt;wnd cls='TGroupBox' title='  Tipo dispositivo  ' /&gt;&lt;wnd cls='TRadioButton' title='PCStazione' /&gt;" FuzzySelectorArgument="&lt;wnd cls='TGroupBox' title='  Tipo dispositivo  ' /&gt;&lt;wnd cls='TRadioButton' title='PCStazione' check:fulltext='PCStazione' /&gt;" Guid="8804ef11-bedc-4463-884b-197ab94a2038" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAATUAAAAjCAYAAAD15502AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAUVSURBVHhe7ZzdkaswDEbTFP3wuo1Qx77TC01sA+mAaxmc2JIs20ASLvmYObMzAQtD1gf5h9zu9/sMAABXAVIDAFwKSA0AcCkgNQDApYDUAACXAlIDAFyKN0ltnPvbbb4V6eau6+Z+GOdJjaMwjfPQUzkWK8SZlDIa0zSPQy/jUJ36YR7dfrUcx9Wn79zx2r4PMPbxtfSnqRcAr+JkUotxDdAU0uRlppdN6QZbSNNQF+fmZJWV7SrX5djzyANSA9/GiaXmyEpkQ7x+VOI4xl4/Pocaxwk2yfAgNQA+xbml5uhHHosLpB4Za1u9ynWCPAD4FJ+RWiYDm8Zh7uLjCJYZqV3FzkkkGfOaXKxexuLnnfj5unkYWVfVj5HFxzhEtgapAXAWTKn9/v4maMfUUSc1D+8OJsfKzMocLxPSYlkWO1c+Vr7+xfE4RYDqhER2gqQxM2X3tr77uT4IXD3ieH7ixok++32x+i33MMR6fk4PjJoJIHqw9UkdaBKIHlr68QBwVKkFif38/CRsl9tBUjOFp+OlswpDNIyaTK1Am9SklCWuDkk93yA1Rf4CJ5a0XgEutdGub/Y7K19nacIHAEJILZYZ3+LPeTmbGqnR093ufnKB7P8nzzckyg6GsbwkpEVqqWAMEhG+WGo1QnvAhUs01s+hfW+19wZiAyWyUsttf39//i8vZ1OToejE3UX+jy8H7DdQ1ahprZolON6wy/KgjCbIh7pqz7KZ8gqaUPk9saUmheSvM9o/8mUz4oGkSS3OeCkG259I26Fk4I+sWoxp1t0b8L0kUisJLWztYtsoNTPrOEhqREO2omcKZaklAiqKoaLhChE6uCwcptR4DKU8Yd93KTXxvfD7uzObRLYGLM4rNdHwXyg1jza4rSMb1QYpJTSW1ySs3C/CEka6T+tarvDzJfKrqbs1/MD2qWJl58jIFwDiXFLrlpmu3GD9a6UWQ4JbX7+KzvekNJhfIzV3Dte1oplQsWTELK/dy/zxeamxOmekWD62Jo51zDEPPAACn5Haxn/KTRMF1MXys58N729y6BUoJp703LVSW5dzRHF08uV5PcwMy3F6qTV0/Z/kJQ7AZyYKNkpty5KOfHbXWKe9XTCl8XZ9mGGtKO/g10KUslVIDXwbqtRIXEFe8RZ/zsvZHCQ1patiZmtiMD3OarhICoIoDKrn5UGUGj6vi9JoxbU4KsaWrHql+w4aU2uVGv9OMV4GdiKkRoQtSCyWGW1aGZujpKYvY5A/DaQsRSBYg5GxtFXvkztOdhm5AE2pmVIguKwL5YnKe2jWqyDqQBqDX/teqRXqCEAjqtQCfNOOqeM4qYkGUo2WicjMrw7Z8HJZj1/bJqTk9ofJEGW8Lo2v1LHh/tnCkLF3r1PbIDVtWOH59geNQ9KEDa0VdJ83vvEBvg9TasdxpNQctCAzjldBtmupdesKaF1eLYP0+OynVcSRgHfWr5gFNcXXHgwHSK3x/lRNEIGv5f+Umsc1BK2LKVheyNZjLKi/6KFC3dNMrNyAd7hW8xyUuaXlHxJ+tdSImuuvfPdzm9SUYzJQJpmWAyDlP5baCnXfaD0ZaxDNPwvuGtXy6xlSlLWxll+YiMtSlykqRxlmEn/tUnlZsEYdGu87pOZZ3r1N60fXvqwbzF/7UVJb0Org1y8+7hMANm+SGgAAvAdIDQBwKSA1AMClgNQAAJcCUgMAXApIDQBwKSA1AMClgNQAAJcCUgMAXIj7/A+qUua7ZpfWZwAAAABJRU5ErkJggg==" InformativeScreenshot="af2689bdd80c0cc94d0cd8f25e25fe4d.png" ScopeSelectorArgument="&lt;wnd app='nomon.exe' cls='TSelDispositivo' title='Seleziona Dispositivo' /&gt;" SearchSteps="Selector, FuzzySelector, Image" Version="V2" Visibility="Interactive" />
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Conferma &gt;&gt;'" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NClick_6" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="187a7536-6885-407a-be61-888d51cfa565" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable DesignTimeRectangle="591, 542, 195, 45" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'Conferma &gt;&gt;'" FullSelectorArgument="&lt;wnd cls='TBitBtn' title='Conferma  &amp;gt;&amp;gt;' /&gt;" FuzzySelectorArgument="&lt;wnd cls='TBitBtn' title='Conferma  &amp;gt;&amp;gt;' check:text='Conferma  &amp;gt;&amp;gt;' /&gt;" Guid="98be3c53-f9b5-4f75-ab65-cc94c991819f" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAMcAAAAxCAYAAABuzr3CAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAATKSURBVHhe7ZrNceswDITTlPrRNV28kytIATlmxhW4CKuEXNKAO9Aj9GcSXFCUKDmys575DokFCQSxBEj57Xa7tYSQGIqDEINJHPzww0/bvr+/Y3H8/PwQ8mf5/PxMi2P8m5C/BsVBiAHFQYgBxUGIAcVBiAHFQYgBxUGIAcVBiAHFQYgBxUGIwT7iaK7tqf5oq+pf+/bmUX209enaNg2wOSrDWPQ4KhkHup68DBuL4ztOJIPq9A3sD0ZzaSvge0d9xTbkZdhQHNe2RkmU4uAJ1pxsoT+FuEkRG4nDVQzdQmVSn9H9jsG51r5SEPvQdxwS33Wtaqk9ZhNxwBW2+mrPjZ9MzvHzV9ymVJfD9u6hOD7a0zPtlZ4Kf3F1+znXUSzLiVJ7zAbiiNupZMsB+ni7egyCchtg/3r5O71KhJWs92e81/3/EsjugEDZp9qpDiDo5nxp68BPOZCQBSK87k7oY9diutjUvt+jvYpZH6/v9nxS4xni4j9j/hoEsBttdzmIULEYqOpLIn4+pfaYcnG4hAucyqgEXfINgTadT22GR1zy4NVci+MKgzehfF4mDjwxPnix0OL4Ans2Jw65VovDXZuKjayc3aKV8svc7+XsHbeuojMxlHlOCrrUHlMsDp1Im2xUc4QxgSZqPmE1vt9LxKH3JRZxXBaIalE8eqJVH4Aqdu54tj9MGaoVetbIUPXw4ltqH1MsjnjTiq/LJ06asId0QYjeO+hqhRLPiWhaPeQe6nsw2bN7DlA1p0rY6JV7qAITho9oRUbiCFo2dy+Y1AvHrJ7jv8uRljSwjcazIejdUsDMvqLUfuB44tCTAJJWSD83TrzIL51wkcDmxRF+D5IlSja/eoBFwKq6kTjmnwWFpq9RsQ0q5uyCs6M4PPq9nP/cO2a8PErsDyeOuYScSE50zkSq3nqxOJQ9FLHyI+nj2rEa14Dx5Pls8TvimIgqcZ44JlbYH0wcagLgBI+krs25z/w1i8SRQ8rHVLLliCMr8dU1yfgKrj93SSW9fLz6snJMX1is2pBL69SdVkmP7l//ROLQCZuFn1DrxYFjvJU4Mja2HTuKI2PPkDxSLrUfKBbHmqNcu9pQHNP9fR4lDjCmqpZjUJdIbhHL9ncV+adN+9jHlItDB9yRrB7RqUeYdOlWxkNPZJAMDxBHVjKmOJo45uKxpzj0vRXdyVwqqUvtMRuII26thP7tpO+QHCWCUqcncY/Tql3Eob9fmiwLku0R4kguNsD2AeJ4/jfkHdi5eVBl0JMgg/T7QyCyuVVuJ3GgltJ/93B2i0bl7LpJisq5jtnBxCHjHX2WHj6a373EkfcOIqTUHrOROBxyVBYEbx7zZCtqvVIggT1IHFGCpwmTWtv+sjgWjgXHYy3u2W7BW/L2OqTUHrOdODp6J3EwfTI2Rk4g4UoGkN/MwAlSE72bOAR1HwNZzdJ2vy0ORzLmUklCP0rfaR2djcUxMByl6d/3dL+mzThCu+NWgu6cOhSc/FpVSr59n0eKowf5Kacjdt97QHEI0gEE4/DHoHyGz3gd9hEHIS8AxUGIAcVBiAHFQYgBxUGIAcVBiAHFQYgBxUGIAcVBiAHFQYgBxUGIQVIc8iUhfxkoDvknIQSIgxASQnEQArm1/wEQYRlylwE2QgAAAABJRU5ErkJggg==" InformativeScreenshot="363a8c938afc9a0470ffb0c0fc4bb387.png" ScopeSelectorArgument="&lt;wnd app='nomon.exe' cls='TSelDispositivo' title='Seleziona Dispositivo' /&gt;" SearchSteps="Selector, FuzzySelector, Image" Version="V2" Visibility="Interactive" />
+              </uix:NClick.Target>
+            </uix:NClick>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="201, 213, 798, 595" FilePath="C:\\Program Files (x86)\\NOMON\\nomon.exe" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFKSURBVFhHzZQLjsQgDEM5OkfrzTpxipFL0w5Is+laeltwCLif2WLaXyY0MwnNPPaX9b8DbNu211qXQd+sHgOsbgYx9Kx+HgBiiJneSwA0sZGb4EpYV1+9qPakHoBNpR4/D4xt4NQG5yuwT8OpihuyWKH/a/TJFL3TWcZwM2H1xhycywBPG4w1X9/ugFR7bafNI7Cm9dmhPj4CWNHf+QAPZ43zIwCvHLfaDb0XsMfGLUz7n/wFNDxdObZBCNcoCOMfoacq16/esZqvGf0buMdItNYD+HuwiScyxib8LI+A59odffMArft6nI0/fgDSmMkgHamdfEM3XIXqAXg4HjfUX43hH0urM4jOV8Ge1CWAiiGiZtTGkESFufYDXXM+MZAG4OGrYkgGVX0N8Nd6PwAf74uEZiahmUloZhKamYRmJqGZSWhmEppJlP0DkgBw/GZDN78AAAAASUVORK5CYII=" InformativeScreenshot="53cbe95732411dcf0e1138b0a659bcdc.png" Selector="&lt;wnd app='nomon.exe' cls='TForm1' title='NOMON    versione: 2.0.0.11' /&gt;" Title="NOMON    versione: 2.0.0.11" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>

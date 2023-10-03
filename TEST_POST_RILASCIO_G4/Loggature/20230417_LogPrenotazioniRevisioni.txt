@@ -1,0 +1,27 @@
+﻿20230417_091927 - FETCH DATA TEST - Lettura dati di test da sheet REGISTRY_PLATES
+20230417_091928 - FETCH DATA TEST - Fine letura dati
+20230417_091930 - INSERIMENTO - Inserimento nuova vettura di categoria CICLOMOTOREe targa TES000
+20230417_092118 - INSERIMENTO - Inviato veicolo al PC Stazione.
+20230417_092120 - INSERIMENTO - Terminato inserimeno pe targa :TES000
+20230417_092120 - INSERIMENTO - Inserimento nuova vettura di categoria AUTOVETTURAe targa TE000AU
+20230417_092609 - FETCH DATA TEST - Lettura dati di test da sheet REGISTRY_PLATES
+20230417_092755 - FETCH DATA TEST - Lettura dati di test da sheet REGISTRY_PLATES
+20230417_092756 - FETCH DATA TEST - Fine letura dati
+20230417_092757 - INSERIMENTO - Inserimento nuova vettura di categoria AUTOVETTURAe targa TE000AU
+20230417_092913 - INSERIMENTO - Inviato veicolo al PC Stazione.
+20230417_092915 - INSERIMENTO - Terminato inserimeno pe targa :TE000AU
+20230417_093041 - FETCH DATA TEST - Lettura dati di test da sheet REGISTRY_PLATES
+20230417_093042 - FETCH DATA TEST - Fine letura dati
+20230417_093043 - INSERIMENTO - Inserimento nuova vettura di categoria AUTOVETTURAe targa TE000AU
+20230417_093155 - INSERIMENTO - Inviato veicolo al PC Stazione.
+20230417_093157 - INSERIMENTO - Terminato inserimeno pe targa :TE000AU
+20230417_100010 - TEST DI INSERIMENTO - AVVIO
+20230417_100059 - TEST DI INSERIMENTO - Login G4 - Avvio procedura di Login
+20230417_100109 - TEST DI INSERIMENTO - Login G4 - Termine procedura di Login
+20230417_100112 - FETCH DATA TEST - Lettura dati di test da sheet REGISTRY_PLATES
+20230417_100116 - FETCH DATA TEST - Fine letura dati
+20230417_100118 - INSERIMENTO - Inserimento nuova vettura di categoria CICLOMOTOREe targa TES000
+20230417_100239 - INSERIMENTO - Inviato veicolo al PC Stazione.
+20230417_100241 - INSERIMENTO - Terminato inserimeno pe targa :TES000
+20230417_100241 - INSERIMENTO - Inserimento nuova vettura di categoria AUTOVETTURAe targa TE000AU
+20230417_100349 - ELIMINA ANAGRAFICHE - Eliminazione anagrafiche clienti

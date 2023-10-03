@@ -1,0 +1,186 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="WF_Proxy_Open" sap2010:ExpressionActivityEditor.ExpressionActivityEditor="C#" sap:VirtualizedContainerService.HintSize="1200,1261" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Text</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Testing.Activities</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Activities.Runtime.Collections</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.CSharp</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.ServiceModel.Activities</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="WF_Proxy_Open" sap:VirtualizedContainerService.HintSize="1210,1196" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:Boolean" Default="False" Name="isProxyOpen" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Application: MainWindow" sap:VirtualizedContainerService.HintSize="1148,1085" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" ScopeGuid="bf0bfdc6-0cdf-49cb-9d94-4de5420f2bc8" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1114,794" sap2010:WorkflowViewState.IdRef="Sequence_11">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="1052,679" sap2010:WorkflowViewState.IdRef="CommentOut_3">
+              <ui:CommentOut.Body>
+                <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="1016,600" sap2010:WorkflowViewState.IdRef="Sequence_10">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <uix:NCheckState DisplayName="Check App State 'Clear log'" sap:VirtualizedContainerService.HintSize="954,489" sap2010:WorkflowViewState.IdRef="NCheckState_2" ScopeIdentifier="bf0bfdc6-0cdf-49cb-9d94-4de5420f2bc8" Timeout="30" Version="V3">
+                    <uix:NCheckState.Exists>
+                      <OutArgument x:TypeArguments="x:Boolean">
+                        <CSharpReference x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpReference`1_2">isProxyOpen</CSharpReference>
+                      </OutArgument>
+                    </uix:NCheckState.Exists>
+                    <uix:NCheckState.IfExists>
+                      <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,272" sap2010:WorkflowViewState.IdRef="Sequence_8">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Riduci a icona'" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="bf0bfdc6-0cdf-49cb-9d94-4de5420f2bc8" Version="V3">
+                          <uix:NClick.Target>
+                            <uix:TargetAnchorable CvType="MinimizeButton" DesignTimeRectangle="1787, 8, 47, 22" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'Riduci a icona'" FullSelectorArgument="&lt;ctrl name='Riduci a icona' role='push button' /&gt;" FuzzySelectorArgument="&lt;ctrl name='Riduci a icona' role='push button' automationid='' check:text='Riduci a icona' /&gt;" Guid="1e1f7426-2dbc-4b3b-9655-be34383b3db8" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAADMAAAAaCAYAAAAaAmTUAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAABRSURBVFhH7dYxCgAhDAXR3P+wksLGKou9hQgLQ5gPr7QY0hiOumq0GHNVF8ZQGUNlDJUxVL/F7M/FjdPbV16GyhgqY6iMoTKGyhiqyMzqIesDBYFTZiq07BQAAAAASUVORK5CYII=" InformativeScreenshot="5694bf734d968da21878ceedeaa4cea1.png" ScopeSelectorArgument="&lt;wnd app='titanium.web.proxy.examples.wpf.exe' cls='HwndWrapper*' title='MainWindow' /&gt;" SearchSteps="Selector, FuzzySelector, Image, CV" Version="V2" Visibility="Interactive">
+                              <uix:TargetAnchorable.Anchors>
+                                <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                  <uix:Target CvType="CloseButton" DesignTimeRectangle="1880, 8, 48, 22" ElementType="Button" FriendlyName="'Chiudi'" FullSelectorArgument="&lt;ctrl name='Chiudi' role='push button' /&gt;" FuzzySelectorArgument="&lt;ctrl name='Chiudi' role='push button' automationid='' check:text='Chiudi' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAADQAAAAaCAYAAAD43n+tAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACwSURBVFhH7dUxCoNAEIXhuUW0S9T7QyoLz5SwYAqtNjxRYmBYcOUlo8zCj+JYzFet+LF+4knOzBF5vsZ49BxkPQdt6VrV8d526gxhdqsbdZYbFYSFL0WpolKzPVFBSFuchUF0EFoDmBj0ExBaIEwMclBOCwbP9bv2797oIA3ARFFBqcVZKBro0Q/TpZlaGDNcvtosNxoIAaV9Z0YF/SMHWc9B1nOQ9b5AIYR49D4gkTfGrcxvBt+2wQAAAABJRU5ErkJggg==" SearchSteps="Selector, FuzzySelector, Image, CV" />
+                                </scg:List>
+                              </uix:TargetAnchorable.Anchors>
+                            </uix:TargetAnchorable>
+                          </uix:NClick.Target>
+                        </uix:NClick>
+                      </Sequence>
+                    </uix:NCheckState.IfExists>
+                    <uix:NCheckState.IfNotExists>
+                      <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="450,105" sap2010:WorkflowViewState.IdRef="Sequence_9">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                      </Sequence>
+                    </uix:NCheckState.IfNotExists>
+                    <uix:NCheckState.Target>
+                      <uix:TargetAnchorable CvElementArea="500, 283, 206, 30" CvTextArea="578, 291, 49, 15" CvTextArgument="Clear log" CvType="Button" DesignTimeRectangle="502, 284, 202, 27" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'Clear log'" FullSelectorArgument="&lt;ctrl automationid='bClearLog' /&gt;" FuzzySelectorArgument="&lt;ctrl automationid='bClearLog' role='push button' check:text='Clear log' /&gt;" Guid="0292d798-0706-47af-b9f3-9194e5402e0e" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAM4AAAAfCAYAAACvffJOAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAHhSURBVHhe7dgxkoIwFIBhDsAFuIC9p7Cg3NbWnrGztNyW8SCMZ6C3svQsbwkESBAEntlG/zfzFQobG/5NNBKGYVYP4TCMYrpwsiwDMKMdL5zH4wFgAuEACoQDKBAOoEA4gALhAAqEAygQDqBAOMGVku9iiaKokV7kZt4vc9ltj3K9D+9/X5nvZHu8yn3kGv4H4YRk4ogjSS+3/r3iV87XO+F8GMIJqMgSPxoX4XwUwgmmkCxJ5XIbu1YZhGMe9nh4nJs65tm1T2fzNxs5mh2sXdeu5YZjAu7W2LixuutX65wPknSfgTUIJ5S5HcW5PvagP+9U5iHf2khMOJFsJnYVd706GieGOlD72r9mIyIcFcIJZvmO4+0IVhdFkUnivN8E9XrtPhwTw8/gvvZv3RDtNfNZhKNCOME0/8GXfMcZ32Eq5kF2jlb9fSHCGVmDcNQIJ6R6t/C/g5T5QU6DX9Xq45P33aO9tz9WNQ/82h1n/qjWH/c4qr2DcEIzgcQjRzAnHHOff1xrY2tiad5LZb9fu+OY1zaIdm0vUHd9fhx4B+F8MT84rEE4X8vsPs8/bWMZwvki9fed9ghXmfwhA7MIB1AgHECBcAAFwgEUCAdQmAwHwGvtdOEwDLN8CIdhVo/IH4ENlX1NJGWDAAAAAElFTkSuQmCC" InformativeScreenshot="e5308a4a0d8353fd09c351e511f225e7.png" ScopeSelectorArgument="&lt;wnd app='titanium.web.proxy.examples.wpf.exe' cls='HwndWrapper*' title='MainWindow' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V2" Visibility="Interactive">
+                        <uix:TargetAnchorable.Anchors>
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                            <uix:Target CvTextArgument="Clear log" CvType="Text" DesignTimeRectangle="579, 290, 48, 15" ElementType="Text" FriendlyName="'Clear log'" FullSelectorArgument="&lt;ctrl automationid='bClearLog' /&gt;&lt;ctrl name='Clear log' role='text' /&gt;" FuzzySelectorArgument="&lt;ctrl automationid='bClearLog' /&gt;&lt;ctrl name='Clear log' role='text' automationid='' check:text='Clear log' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAADQAAAATCAYAAADf0S5lAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFiSURBVFhH7ZUhsoQwDIZ7AC7ABfCcAoFci13P4FYin2U4CMMZ8CgkZ8kjNKVJKcsy74ntzopf0IY0X/JT1DzP8En6Ar27vkDvLg/QAE0WgVJKK29hxPWhgSytoJ/c+L9raDJIqx4mz95VSSAsOlKQt6Nd636g7qcwgboyljBc4QF1UMY5tKMM2OQAYRGRa8sju1LuR43vJFDhxE1eysWBsLFbjoQ3kedf8tR3iLcztCzQ2QTYvq+A/WTx8JSKRyAFycEUeL4VhhW5No6e5R7BHQJdmJDoIGkrtishZusa9HluC4RF3pw48y5vEO3hWcdAmviVb8g/kUV4ALOIjfsPIE+O50AU4Hh8aO7wcG651QbC2ybW2kMXcnVC55aztj21HAkLX67unZUYEMZJ25kmaAi9lkNRXJ0QPlOhJrdoHM9/dikEKNkIrYCBcFr7X0BQQOv3ZKy4yHcxBW05nz4MaIZfeOjExnPahIQAAAAASUVORK5CYII=" SearchSteps="Selector, FuzzySelector, CV" />
+                          </scg:List>
+                        </uix:TargetAnchorable.Anchors>
+                      </uix:TargetAnchorable>
+                    </uix:NCheckState.Target>
+                  </uix:NCheckState>
+                </Sequence>
+              </ui:CommentOut.Body>
+            </ui:CommentOut>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-8, -8, 1936, 1168" FilePath="C:\\sorgenti\\proxy\\titanium.web.proxy.examples.wpf.exe" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAI2SURBVFhH7ZfbThNRFIZ71TOFUl4BL42vJWjVtvQAiigH8djiRROuTPoccpJRQRS1VqGImvgYvVmutfbsPRtm73RfaEpid/JlJtPM+v5/zVUjwzM8tUqhXquUYDAU6hjA9MPfxfM845XgAL1ebyBcvACtVguazSZD9/L5lRe/YeL5L+Qn5NaQxg/kFHJ14juMP0OensD4E6IL2cdduLx+2neu8wZyayQMpCxU0q6SZh8dQfZhgGmWjnsAY8tjFBK+cPUbjBEPvjKjKx3jLJ1QANuqZFPR0iJdQenyF8ES0e4713kDwWqlUEo7mhBZbCOfIXMfuffJOEvHOUDQsiNYRrEStlk4ylJk4SOM3CUOjbN0QgFsqzq/2ozWklFSZP4QRu58YPrNdd6A3jQkJeE8CpH07fc+B5CeOzDO0nEOoIRIRkllUxSiTJKafQepGlLdN87SCQWwrUpvmiYhtZRSFu4LUJqq7EGy/JaR79tw3gA1lWtNz8qWvpClQpgsv4HkDFJ6zZhm6TgHoJZnmlJLKSWhT6LoQaJA7DKmWTqhALZPkKoKoWoqpdgyUSR86a1diN98Jbixo9634bwBKU34q1VClkqhkMbz2xC7TmwZZ+m4ByCxL41TSyXdgRgK43m8opC5tgmxaWRqwzhLJxTA9gl4teekLGahlG5AFKXRqZcQvSqQ79tw3sClhT3RMn+2ZZSlgVBncs4zztJxDvCvuBgBquVig24GQbVcavj/Dobnvz2RyB8o+VF49BHUrAAAAABJRU5ErkJggg==" InformativeScreenshot="37aff4b03c78a96da1b92ab2a2b63658.png" Selector="&lt;wnd app='titanium.web.proxy.examples.wpf.exe' cls='HwndWrapper*' title='MainWindow' /&gt;" Title="MainWindow" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>

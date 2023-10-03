@@ -1,0 +1,6 @@
+﻿20230427_123357 - LOGGATURA - UPDATE DATA TEST - Aggiornamento file DataTest per sheet "REGISTRY_PLATES" in Column "File .pr2" con Valore "FILE00000.pr2" relativa alla Targa "AA111AA"
+20230427_124334 - LOGGATURA - UPDATE DATA TEST - Aggiornamento file DataTest per sheet "REGISTRY_PLATES" in Column "File .pr2" con Valore "FILE00000.pr2" relativa alla Targa "AA111AA"
+20230427_124356 - LOGGATURA - UPDATE DATA TEST - Aggiornamento file DataTest per sheet "REGISTRY_PLATES" in Column "File .pr2" con Valore "FILE00000.pr2" relativa alla Targa "AA111AA"
+20230427_023739 - LOGGATURA - UPDATE DATA TEST - Aggiornamento file DataTest per sheet "REGISTRY_PLATES" in Column "File .pr2" con Valore "FILE00000.pr2" relativa alla Targa "AA111AA"
+20230427_023841 - LOGGATURA - UPDATE DATA TEST - Aggiornamento file DataTest per sheet "REGISTRY_PLATES" in Column "File .pr2" con Valore "FILE00000.pr2" relativa alla Targa "AA111AA"
+20230427_055425 - NOMON - FILE ACCETTAZIONE - Generato file 23000070.ac2
